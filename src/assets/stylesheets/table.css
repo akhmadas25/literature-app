@@ -1,0 +1,11 @@
+#Table {
+  counter-reset: rowNumber;
+}
+
+#Table tr::before {
+  display: table-cell;
+  counter-increment: rowNumber;
+  content: counter(rowNumber) ".";
+  text-align: center;
+}
+
