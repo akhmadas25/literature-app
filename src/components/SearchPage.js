@@ -29,6 +29,7 @@ function SearchPage({ item }) {
             style={{
               whiteSpace: "nowrap",
               overflow: "hidden",
+              textOverflow: "ellipsis",
             }}
           >
             {item.author}
