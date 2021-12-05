@@ -24,11 +24,25 @@ function SearchPage({ item }) {
       </h3>
       <div className="row">
         <div className="col-md-6">
-          <h4 className="text-secondary autthor">{item.author}</h4>
+          <h4
+            className="text-secondary autthor"
+            style={{
+              whiteSpace: "nowrap",
+              overflow: "hidden",
+            }}
+          >
+            {item.author}
+          </h4>
         </div>
         <div className="col" />
-        <div className="col-md-4">
-          <h4 className="text-secondary text-end author">
+        <div className="col-md-3">
+          <h4
+            className="text-secondary text-end author"
+            style={{
+              whiteSpace: "nowrap",
+              overflow: "hidden",
+            }}
+          >
             {item.publication_date}
           </h4>
         </div>

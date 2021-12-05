@@ -112,7 +112,7 @@ function AddLiteratur() {
           </div>
           <div className="text-end mt-5">
             <button className="btn btn-danger text-light px-5" type="submit">
-              Add Collection
+              Add Literature
             </button>
           </div>
         </form>

@@ -54,11 +54,11 @@ function CardProfile() {
       formData.set("address", form.address);
       formData.set("phone", form.phone);
       const response = await API.patch("/changeProfile", formData, config);
+      getProfile();
       swal({
         title: response.data.message,
         icon: "success",
       });
-      getProfile();
     } catch (error) {
       console.log(error);
       swal({
