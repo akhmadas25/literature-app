@@ -11,7 +11,6 @@ function CardProfile() {
   const [profile, setProfile] = useState([]);
   const [preview, setPreview] = useState(null);
   const [form, setForm] = useState({
-    email: "",
     phone: "",
     address: "",
     picture: "",
@@ -53,9 +52,8 @@ function CardProfile() {
         formData.set("picture", form?.picture[0], form?.picture[0]?.name);
       }
       formData.set("address", form.address);
-      formData.set("email", form.email);
       formData.set("phone", form.phone);
-      const response = await API.post("/changeProfile", formData, config);
+      const response = await API.patch("/changeProfile", formData, config);
       getProfile();
       swal({
         title: response.data.message,
@@ -160,14 +158,6 @@ function CardProfile() {
                     ></button>
                   </div>
                   <div class="modal-body">
-                    <input
-                      className="form-control bg-secondary mt-3"
-                      value={item.email}
-                      type="text"
-                      name="email"
-                      onChange={handleChange}
-                    />
-
                     <input
                       className="form-control bg-secondary mt-3"
                       value={item.phone}
