@@ -160,14 +160,14 @@ function CardProfile() {
                   <div class="modal-body">
                     <input
                       className="form-control bg-secondary mt-3"
-                      value={item.phone}
+                      placeholder={item.phone}
                       type="text"
                       name="phone"
                       onChange={handleChange}
                     />
                     <input
                       className="form-control bg-secondary mt-3"
-                      value={item.address}
+                      placeholder={item.address}
                       type="text"
                       name="address"
                       onChange={handleChange}
