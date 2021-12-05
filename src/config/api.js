@@ -17,4 +17,4 @@ export const setAuthToken = (token) => {
 };
 
 export const API_URL = "http://localhost:5000/";
-export const PATH_FILE = "http://localhost:5000/uploads/"
+export const PATH_FILE = process.env.REACT_APP_PATH_FILE || "http://localhost:5000/uploads/"
