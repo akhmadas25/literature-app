@@ -23,7 +23,7 @@ function SearchPage({ item }) {
         {item.title}
       </h3>
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-5">
           <h4
             className="text-secondary autthor"
             style={{
@@ -35,7 +35,7 @@ function SearchPage({ item }) {
           </h4>
         </div>
         <div className="col" />
-        <div className="col-md-3">
+        <div className="col-md-4">
           <h4
             className="text-secondary text-end author"
             style={{
